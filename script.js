@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Создаём ссылку для каждого изображения
         const link = document.createElement('a');
-        link.href = `./page${i}.html`; // Установим нужную страницу для каждого изображения
+        link.href = `page${i}.html`; // Установим нужную страницу для каждого изображения
 
         const img = document.createElement('img');
         img.src = `images/image${i}.jpg`; // Путь к изображению
