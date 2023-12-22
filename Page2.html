@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт достопримечательностей Владивостока</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="images-container" id="imagesContainer">
+        <!-- Изображение будет добавлено с помощью JavaScript -->
+    </div>
+    <div class="background-container">
+        <div class="text-container">
+            <div class="vladivostok-text">Туризм</div>
+            <div class="for-you-text">для Вас</div>
+        </div>
+        <img src="images/Turism.jpg" alt="Logo" width="669" height="645">
+    </div>
+
+    <div class="dynamic-container">
+        <div class="static-field">Хочу узнать:</div>
+        <div class="dynamic-field" id="dynamicField">Погода</div>
+        <!-- Используйте onclick для перехода на search.html -->
+        <button class="find-button" onclick="redirectToSearch()">Найти</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="logo.js"></script>
+<script>
+    // Функция для перехода на главную
+    function redirectToSearch() {
+        window.location.href = 'index.html';
+    }
+</script>
+
+</body>
+</html>
