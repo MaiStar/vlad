@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Создаем 5 изображений и добавляем их в контейнер
     const imagesContainer = document.getElementById('imagesContainer');
-    const imageCaptions = ["Погода", "Туризм", "Новости", "Госуслуги", "Справка"];
+    const imageCaptions = ["Госуслуги", "Справка", "Погода", "Карта", "Туризм"];
 
     for (let i = 1; i <= 5; i++) {
         const imgContainer = document.createElement('div');
