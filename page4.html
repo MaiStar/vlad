@@ -1,41 +1,109 @@
 <!DOCTYPE html>
+<!-- 
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт достопримечательностей Владивостока</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Карта достопримечательностей</title>
+   <link rel="stylesheet" href="./css/style-catalog.css" />
+	
+    <link rel="stylesheet" href="./css/header-footer.css">
+		
+	<link rel="stylesheet" href="styles.css">
+		
+
+	
+
+
+
+
+
+	<style>
+		
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8EE;
+        }
+		
+		
+        header, footer {
+            background-color: #F8F8EE;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+		
+	.all-text {
+        font-size: 20px;
+        color: #2C97CC;
+        margin-bottom: 5px;
+    }
+		
+	.text {
+        font-size: 50px;
+        color: #2C97CC;
+        margin-bottom: 5px;
+		text-align: center;
+    }
+	
+	
+	.goods-label h2 {
+        color: white;
+    }
+	
+	
+	</style>	
+		
 </head>
+
+
 <body>
 
-<div class="container">
-    <div class="images-container" id="imagesContainer">
-        <!-- Изображение будет добавлено с помощью JavaScript -->
-    </div>
-    <div class="background-container">
-        <div class="text-container">
-            <div class="vladivostok-text">Владивосток</div>
-            <div class="for-you-text">для Вас</div>
+  <header>
+
+		<a href="index.html" class="all-text"><img src="image1.jpg" alt="Image 1"><br>Госуслуги</a>
+		<a href="index.html" class="all-text"><img src="image2.jpg" alt="Image 2"><br>Справка</a>
+		<a href="index.html" class="all-text"><img src="image3.jpg" alt="Image 3"><br>Погода</a>
+		<a href="index.html" class="all-text"><img src="image4.jpg" alt="Image 4"><br>Карта</a>
+		<a href="index.html" class="all-text"><img src="image5.jpg" alt="Image 5"><br>Туризм</a>
+    </header>
+
+
+    <main class="main">
+        <div class="wrapper">
+            
+			 <div class="text">Список достопримечательностей на Карте</div>
+
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A602cabfb75cc7f3d95957e9d42cadf990818f9495937947e7fa5c8306bc79031&amp;width=1037&amp;height=391&amp;lang=en_FR&amp;scroll=true"></script>
+
         </div>
-        <img src="images/logo.jpg" alt="Logo" width="600" height="600" id="logoImage">
-    </div>
 
-    <div class="dynamic-container">
-        <div class="static-field">Хочу узнать:</div>
-        <div class="dynamic-field" id="dynamicField">Погода</div>
-        <!-- Используйте onclick для перехода на search.html -->
-        <button class="find-button" onclick="redirectToSearch()">Найти</button>
-    </div>
-</div>
+        </div>
+       
 
-<script src="script.js"></script>
-<script src="logo.js"></script>
-<script>
-    // Функция для перехода на страницу search.html
-    function redirectToSearch() {
-        window.location.href = 'search.html';
-    }
-</script>
+    </main>
+
+       <footer>
+		<a href="index.html" class="all-text"><img src="image1.jpg" alt="Image 1"><br>Госуслуги</a>
+		<a href="index.html" class="all-text"><img src="image2.jpg" alt="Image 2"><br>Справка</a>
+		<a href="index.html" class="all-text"><img src="image3.jpg" alt="Image 3"><br>Погода</a>
+		<a href="index.html" class="all-text"><img src="image4.jpg" alt="Image 4"><br>Карта</a>
+		<a href="index.html" class="all-text"><img src="image5.jpg" alt="Image 5"><br>Туризм</a>
+    </footer>
+	
+
+	
+    <script src="./js/coming.js"></script>
+	
+	
+	<script src="script.js"></script>
+
+
 
 </body>
 </html>
